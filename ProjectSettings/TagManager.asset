@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Game Board
+    uniqueID: 913133217
+    locked: 0
+  - name: Map
+    uniqueID: 1087744939
+    locked: 0
+  - name: Tokens
+    uniqueID: 2793077561
+    locked: 0
+  - name: Effects
+    uniqueID: 3694329421
+    locked: 0
