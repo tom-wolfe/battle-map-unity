@@ -1,3 +1,4 @@
+using BattleMap.Core.Extensions;
 using UnityEngine;
 
 namespace BattleMap.Core.Camera
@@ -20,6 +21,9 @@ namespace BattleMap.Core.Camera
             var newZoom = camera.orthographicSize - scrollDelta * zoomSensitivity;
             newZoom = Mathf.Clamp(newZoom, maxZoom, minZoom);
             camera.orthographicSize = newZoom;
+
+            var mapBounds = GetComponent<Collider2D>().bounds;
+            camera.KeepWithinBounds(mapBounds);
         }
     }
 }
